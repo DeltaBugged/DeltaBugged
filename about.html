@@ -1,62 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pratham | About</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+/* About Page */
+.about {
+    padding: 60px 20px;
+    text-align: center;
+    color: #ccc;
+}
 
-<!-- Header + Hamburger -->
-<header>
-    <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <nav class="side-menu" id="sideMenu">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
+.about h2 {
+    color: #8a2be2;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
 
-<main class="container">
+.about-desc {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
 
-    <!-- About Section -->
-    <section class="about">
-        <h2>About Me</h2>
-        <div class="about-container">
-            <img src="assets/profile.jpg" alt="Pratham Profile" class="profile-pic">
-            <div class="about-text">
-                <p>Commerce student with a passion for coding. I experiment, build, and optimize web projects while keeping aesthetics on point. Love learning new languages and frameworks.</p>
-                
-                <div class="coding-stats">
-                    <h3>Coding Stats</h3>
-                    <ul>
-                        <li>Highest Streak: <strong>31 consecutive days</strong></li>
-                        <li>Total Commits: <strong>3892</strong></li>
-                        <li>Most Active Day: <strong>Sunday</strong></li>
-                        <li>Average Commits per Day: <strong>16</strong></li>
-                    </ul>
-                </div>
+/* Stats Grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
 
-                <div class="timeline">
-                    <h3>Milestones</h3>
-                    <ul>
-                        <li>Started coding at 16</li>
-                        <li>First website launched at 17</li>
-                        <li>Full-stack projects ongoing</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+.stat-card {
+    background: #111;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(138,43,226,0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s;
+}
 
-</main>
+.stat-card:hover {
+    transform: translateY(-5px);
+}
 
-<script src="app.js"></script>
-</body>
-</html>
+.stat-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.stat-card h3 {
+    color: #8a2be2;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+.stat-card p {
+    font-weight: 500;
+}
+
+/* Milestones */
+.milestones h3 {
+    color: #8a2be2;
+    margin-bottom: 15px;
+}
+
+.milestones ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.milestones ul li {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
