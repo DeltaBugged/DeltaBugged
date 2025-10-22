@@ -19,6 +19,16 @@ body{font-family:'Poppins',sans-serif;background:#0a0a0a;color:#eee;overflow-x:h
   transform: scale(1.2);
 }
 
+/* White circle background for GitHub */
+.icon-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 50%;
+  padding: 5px; /* makes the circle a bit bigger than icon */
+}
+
 /* Floating Barça logos */
 .floating-barca img {
     width: 20px; /* tiny */
