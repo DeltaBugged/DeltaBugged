@@ -1,4 +1,4 @@
-// Hamburger Menu
+// Hamburger toggle
 const hamburger = document.getElementById('hamburger');
 const sideMenu = document.getElementById('sideMenu');
 
