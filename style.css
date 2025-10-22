@@ -8,9 +8,9 @@ body{font-family:'Poppins',sans-serif;background:#0a0a0a;color:#eee;overflow-x:h
     pointer-events:none; z-index:0;
 }
 .floating-barca img{
-    width:70px; /* same as fun card height */
-    position:absolute;
+    width:18px; /* tiny */
     opacity:0.12;
+    position:absolute;
     animation:float linear infinite;
 }
 .floating-barca img:nth-child(1){animation-duration:18s; top:10%; left:5%;}
@@ -60,4 +60,17 @@ body{font-family:'Poppins',sans-serif;background:#0a0a0a;color:#eee;overflow-x:h
 .skill-card:hover{box-shadow:0 0 20px #8a2be2; transform:translateY(-3px);}
 .skill-card h4{margin-bottom:10px;}
 .skill-bar{width:100%; height:10px; background:#222; border-radius:5px; overflow:hidden;}
-.skill-level{height:10px; background:#8a2be2; border
+.skill-level{height:10px; background:#8a2be2; border-radius:5px; transition:0.5s;}
+
+/* Fun Cards */
+.fun-cards{display:flex; justify-content:center; gap:15px; margin:50px 0; flex-wrap:wrap; z-index:1; position:relative;}
+.fun-card{background:#111; padding:15px 25px; border-radius:10px; box-shadow:0 0 10px rgba(138,43,226,0.3); transition:0.3s; cursor:default; color:#eee; font-weight:500;}
+.fun-card:hover{transform:translateY(-3px) scale(1.05); box-shadow:0 0 20px #8a2be2;}
+
+/* CTA Buttons */
+.cta{display:flex; justify-content:center; gap:20px; margin-bottom:80px; flex-wrap:wrap; z-index:1; position:relative;}
+.btn{padding:12px 30px; border-radius:50px; background:#8a2be2; color:#fff; text-decoration:none; font-weight:500; transition:0.3s; display:inline-block;}
+.btn:hover{transform:scale(1.05); box-shadow:0 0 15px #8a2be2;}
+
+/* Footer */
+.footer-social
