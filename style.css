@@ -70,3 +70,74 @@ body{font-family:'Poppins',sans-serif;background:#0a0a0a;color:#eee;overflow-x:h
 /* CTA Buttons */
 .cta{display:flex; justify-content:center; gap:20px; margin-bottom:80px; flex-wrap:wrap; z-index:1; position:relative;}
 .btn{padding:12px 30px; border-radius:50px; background:#8a2be2; color:#fff; text-decoration:none; font-weight:500; transition
+/* About Page */
+.about {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    color: #8a2be2;
+    margin-bottom: 40px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-container img.profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 3px solid #8a2be2;
+    object-fit: cover;
+}
+
+.about-text {
+    max-width: 700px;
+    text-align: left;
+    color: #ccc;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.coding-stats, .timeline {
+    background: #111;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgba(138,43,226,0.3);
+}
+
+.coding-stats h3, .timeline h3 {
+    color: #8a2be2;
+    margin-bottom: 15px;
+}
+
+.coding-stats ul, .timeline ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.coding-stats ul li, .timeline ul li {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+@media (min-width: 768px) {
+    .about-container {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .about-text {
+        margin-left: 40px;
+    }
+}
