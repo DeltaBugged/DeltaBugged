@@ -5,5 +5,11 @@ document.addEventListener('mousemove', e => {
     cursor.style.top = e.clientY + 'px';
 });
 
+// Copy Email Button
+function copyEmail(){
+    navigator.clipboard.writeText("delta@delphadex.com");
+    alert("Email copied to clipboard!");
+}
+
 // Easter Egg
-console.log("%cYo, you found the secret 😏", "color: #8a2be2; font-size: 20px;");
+console.log("%cHey coder, welcome to the secret console 👀","color:#8a2be2; font-size:18px;");
