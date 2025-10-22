@@ -1,15 +1,27 @@
-// Custom Cursor
-const cursor = document.querySelector('.cursor');
-document.addEventListener('mousemove', e => {
-    cursor.style.left = e.clientX + 'px';
-    cursor.style.top = e.clientY + 'px';
+// Hamburger Menu
+const hamburger = document.getElementById('hamburger');
+const sideMenu = document.getElementById('sideMenu');
+
+hamburger.addEventListener('click', () => {
+    sideMenu.classList.toggle('open');
+    hamburger.classList.toggle('active');
 });
 
-// Copy Email Button
+// Copy Email (for contact page)
 function copyEmail(){
     navigator.clipboard.writeText("delta@delphadex.com");
     alert("Email copied to clipboard!");
 }
 
-// Easter Egg
-console.log("%cHey coder, welcome to the secret console 👀","color:#8a2be2; font-size:18px;");
+// Optional: Animate skill bars on scroll
+const skillLevels = document.querySelectorAll('.skill-level');
+
+window.addEventListener('scroll', () => {
+    const trigger = window.innerHeight * 0.8;
+    skillLevels.forEach(level => {
+        const rect = level.getBoundingClientRect();
+        if(rect.top < trigger){
+            level.style.width = level.style.width; // already set in HTML style
+        }
+    });
+});
