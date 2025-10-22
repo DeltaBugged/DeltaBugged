@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pratham 2.0 | Meme-Tech Portfolio</title>
+    <title>Pratham 2.0 | Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -16,58 +16,89 @@
     <!-- Custom Cursor -->
     <div class="cursor"></div>
 
+    <!-- Hero Section -->
     <section class="hero">
-    <div class="hero-text">
-        <h1>Yo, I’m <span class="highlight">Pratham 👋</span></h1>
-        <h3 class="subtitle">Certified Yapper by Birth 🗣️</h3>
-        <p>Commerce student by day, full-time bug creator by night.<br>
-           Started coding ‘just for fun’ — now I cry in JavaScript 😅</p>
-        <div class="socials">
-            <a href="https://github.com/DeltaBugged" target="_blank">GitHub</a>
-            <a href="https://telegram.dog/iflexfr" target="_blank">Telegram</a>
-            <a href="https://instagram.com/Frqxd_parth" target="_blank">Insta</a>
+        <div class="hero-text">
+            <h1>Yo, I’m <span class="highlight">Pratham</span></h1>
+            <h3 class="subtitle typewriter">Certified Yapper by Birth</h3>
+            <p>Commerce student. Full-stack enthusiast. I code, debug, and optimize—all in one night.</p>
+
+            <ul class="hero-facts">
+                <li>Full-time bug fixer</li>
+                <li>Coding since 16</li>
+                <li>Always testing boundaries</li>
+            </ul>
+
+            <p class="hero-meme">“Writes code. Breaks code. Repeats.”</p>
+
+            <div class="socials">
+                <a href="https://github.com/DeltaBugged" target="_blank" class="social-link github">GitHub</a>
+                <a href="https://telegram.dog/iflexfr" target="_blank" class="social-link telegram">Telegram</a>
+                <a href="https://instagram.com/Frqxd_parth" target="_blank" class="social-link insta">Insta</a>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- About Section -->
     <section class="about">
-        <h2>About Me 😎</h2>
+        <h2>About Me</h2>
         <div class="about-container">
             <img src="assets/profile.jpg" alt="Pratham Profile">
-            <p>Frontend, backend, memes… pick your fighter. I make pixels obey me, sometimes they listen. Coding? Mostly crying.</p>
+            <div class="about-text">
+                <p>Commerce student with a passion for coding. I experiment, build, and optimize web projects while keeping aesthetics on point. Love learning new languages and frameworks.</p>
+                <div class="timeline">
+                    <h4>Milestones:</h4>
+                    <ul>
+                        <li>Started coding at 16</li>
+                        <li>First website launched at 17</li>
+                        <li>Full-stack projects ongoing</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Skills Section -->
     <section class="skills">
-        <h2>Skills ⚡</h2>
+        <h2>Skills</h2>
         <div class="skills-grid">
             <div class="skill-card">
-                <h3>Python 🐍</h3>
-                <p>Automating stuff, making scripts, and chaos management.</p>
+                <h3>Python</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 90%"></div>
+                </div>
+                <p class="skill-note">Automating and scripting.</p>
             </div>
             <div class="skill-card">
-                <h3>HTML 📝</h3>
-                <p>Structuring web pages like a pro.</p>
+                <h3>HTML</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 95%"></div>
+                </div>
+                <p class="skill-note">Structuring web pages.</p>
             </div>
             <div class="skill-card">
-                <h3>CSS 🎨</h3>
-                <p>Making things look vibey & Gen Z aesthetic.</p>
+                <h3>CSS</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 85%"></div>
+                </div>
+                <p class="skill-note">Styling and aesthetics.</p>
             </div>
             <div class="skill-card">
-                <h3>JavaScript 💻</h3>
-                <p>Adding logic, bugs, and magic to web pages.</p>
+                <h3>JavaScript</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 80%"></div>
+                </div>
+                <p class="skill-note">Logic and interactivity.</p>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section class="contact">
-        <h2>Contact Me ✉️</h2>
-        <p>Wanna collab or just send memes? Hit me up!</p>
+        <h2>Contact Me</h2>
+        <p>Hit me up for collabs, questions, or just coding memes.</p>
         <div class="contact-buttons">
-            <a href="mailto:delta@delphadex.com">Email</a>
+            <button onclick="copyEmail()">Copy Email</button>
             <a href="https://telegram.dog/iflexfr" target="_blank">Telegram</a>
             <a href="https://instagram.com/Frqxd_parth" target="_blank">Insta</a>
         </div>
