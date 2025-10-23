@@ -67,24 +67,112 @@ body{font-family:'Poppins',sans-serif;background:#0a0a0a;color:#eee;overflow-x:h
 .btn{padding:12px 30px;border-radius:50px;background:#8a2be2;color:#fff;text-decoration:none;font-weight:500;transition:0.3s;}
 .btn:hover{transform:scale(1.05);box-shadow:0 0 20px #8a2be2;}
 
-/* About Page Cards */
-.cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:20px;margin-bottom:40px;}
-.card{background:#111;padding:25px 15px;border-radius:12px;box-shadow:0 0 15px rgba(138,43,226,0.3);display:flex;flex-direction:column;align-items:center;transition:transform 0.3s,box-shadow 0.3s;text-align:center;}
-.card:hover{transform:translateY(-5px);box-shadow:0 0 25px rgba(138,43,226,0.6);}
-.card-icon{font-size:2rem;margin-bottom:12px;}
-.card h3{color:#8a2be2;font-size:1.2rem;margin-bottom:8px;}
-.card p{font-weight:500;font-size:0.95rem;}
+.about {
+  padding: 60px 20px;
+  text-align: center;
+  color: #ccc;
+}
+
+.section-title {
+  color: #fff;
+  font-size: 2rem;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 3px;
+  background: #8a2be2;
+  margin: 6px auto 0;
+  border-radius: 3px;
+}
 
 .about-desc {
   max-width: 600px;
-  margin: 0 auto 40px;
-  font-size: 0.95rem;
-  line-height: 1.7;
-  color: #bbb;
-  letter-spacing: 0.3px;
+  margin: 0 auto 50px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #aaa;
+}
+
+/* Stats */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.stat-card {
+  background: #111;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(138,43,226,0.25);
+  transition: 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(138,43,226,0.45);
+}
+
+.stat-card .emoji {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.stat-card h3 {
+  color: #8a2be2;
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+.stat-card p {
+  color: #ccc;
+  font-weight: 400;
 }
 
 /* Milestones */
-.milestones h3{color:#8a2be2;margin-bottom:15px;}
-.milestones ul{list-style:none;padding-left:0;}
-.milestones ul li{margin-bottom:10px;font-weight:500;}
+.milestones h3 {
+  color: #8a2be2;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.milestones ul {
+  list-style: none;
+  padding: 0;
+  color: #bbb;
+}
+
+.milestones ul li {
+  margin: 8px 0;
+}
+
+/* Fun Card */
+.fun-cards {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.fun-card {
+  background: #111;
+  padding: 15px 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(138,43,226,0.3);
+  color: #eee;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.fun-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #8a2be2;
+}
+
