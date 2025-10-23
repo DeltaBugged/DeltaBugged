@@ -1,107 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pratham | About</title>
-<link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pratham | About</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- Floating Barça Logos -->
 <div class="floating-barca">
-    <img src="https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg" alt="Barça Logo">
-    <img src="https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg" alt="Barça Logo">
-    <img src="https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg" alt="Barça Logo">
+  <img src="https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg" alt="Barça Logo">
+  <img src="https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg" alt="Barça Logo">
+  <img src="https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg" alt="Barça Logo">
 </div>
 
-<!-- Header + Hamburger -->
+<!-- Header + Menu -->
 <header>
-    <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <nav class="side-menu" id="sideMenu">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+  <nav class="side-menu" id="sideMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 </header>
 
-<main class="container">
-    <section class="about">
-        <h2>About Me</h2>
-        <p class="about-desc">
-            Commerce student, coding addict, and full-stack enthusiast. Always experimenting, building, and optimizing web projects. Certified Yapper by birth. Mesiholic too ⚽.
-        </p>
+<section class="about">
+  <h2>About Me</h2>
+  <p class="about-desc">
+    Commerce student turned coder. I build things that make the web look good and run smooth.  
+    Always down to experiment, learn, and ship new projects — from small scripts to full-stack madness.  
+    Balance between creativity and logic? Yeah, that’s my comfort zone.
+  </p>
 
-        <!-- Cards Grid -->
-        <div class="cards-grid">
+  <!-- Stats Grid -->
+  <div class="stats-grid">
+    <div class="stat-card">
+      <span>🔥</span>
+      <h3>Highest Streak</h3>
+      <p>31 consecutive days</p>
+    </div>
+    <div class="stat-card">
+      <span>📈</span>
+      <h3>Total Commits</h3>
+      <p>3,892 commits</p>
+    </div>
+    <div class="stat-card">
+      <span>☀️</span>
+      <h3>Most Active Day</h3>
+      <p>Sunday</p>
+    </div>
+    <div class="stat-card">
+      <span>💡</span>
+      <h3>Average Commits</h3>
+      <p>16 per day</p>
+    </div>
+  </div>
 
-            <!-- Card Example -->
-            <div class="card">
-                <div class="card-icon">⚡</div>
-                <h3>Highest Streak</h3>
-                <p>31 consecutive days of coding</p>
-            </div>
+  <!-- Milestones -->
+  <div class="milestones">
+    <h3>Milestones</h3>
+    <ul>
+      <li>Started coding at 16</li>
+      <li>Launched first website at 17</li>
+      <li>Working on full-stack projects</li>
+    </ul>
+  </div>
 
-            <div class="card">
-                <div class="card-icon">🐍</div>
-                <h3>Total Commits</h3>
-                <p>3892 commits</p>
-            </div>
+  <!-- Fun Card -->
+  <div class="fun-cards" style="margin-top:50px;">
+    <div class="fun-card">Mesiholic ⚽</div>
+  </div>
 
-            <div class="card">
-                <div class="card-icon">📅</div>
-                <h3>Most Active Day</h3>
-                <p>Sunday</p>
-            </div>
+</section>
 
-            <div class="card">
-                <div class="card-icon">🖋</div>
-                <h3>Avg Commits</h3>
-                <p>16 commits/day</p>
-            </div>
-
-            <div class="card">
-                <div class="card-icon">🎤</div>
-                <h3>Certified Yapper</h3>
-                <p>By birth</p>
-            </div>
-
-            <div class="card">
-                <div class="card-icon">🐛</div>
-                <h3>Debugs in Style</h3>
-                <p>Smooth operator</p>
-            </div>
-
-            <div class="card">
-                <div class="card-icon">⚽</div>
-                <h3>Mesiholic</h3>
-                <p>Messi fan forever</p>
-            </div>
-
-            <div class="card">
-                <div class="card-icon">💻</div>
-                <h3>Favorite Stack</h3>
-                <p>HTML, CSS, JS, Python</p>
-            </div>
-
-        </div>
-
-        <!-- Milestones -->
-        <div class="milestones">
-            <h3>Milestones</h3>
-            <ul>
-                <li>Started coding at 16</li>
-                <li>First website launched at 17</li>
-                <li>Full-stack projects ongoing</li>
-            </ul>
-        </div>
-    </section>
-</main>
+<!-- Footer -->
+<footer>
+  <div class="footer-socials">
+    <a href="https://github.com/DeltaBugged" target="_blank" class="icon-circle">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="social-icon">
+    </a>
+    <a href="https://telegram.dog/iflexfr" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg" alt="Telegram" class="social-icon">
+    </a>
+    <a href="https://instagram.com/Frqxd_parth" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="social-icon">
+    </a>
+  </div>
+</footer>
 
 <script src="app.js"></script>
 </body>
